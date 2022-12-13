@@ -1,0 +1,64 @@
+.section {
+    position: absolute;
+    left: 50%;
+    top: 170%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.skills {
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Pacifico', cursive;
+}
+.diagram {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.skillBlock {
+    height: 380px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;  
+}
+.skillBlock:first-child .column {
+    height: calc(350% / 350 * 85);  /*85%*/
+    background: green;
+    animation: appFir 2s 1;
+}
+.skillBlock:nth-child(2) .column {
+    height: calc(350% / 350 * 65);  /*85%*/
+    background: red;
+    animation: appSec 2s 1;
+}
+.skillBlock:last-child .column {
+    height: calc(350% / 350 * 90);  /*85%*/
+    background: yellow;
+    animation: appThi 2s 1;
+}
+.column span {
+    transform: rotate(-90deg);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    animation: app 3s 1;
+}
+.name {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-style: 25px;
+    margin-top: 10px;
+}

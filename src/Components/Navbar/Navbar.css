@@ -1,0 +1,15 @@
+.Navv {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background-color: forestgreen !important;
+    color: white !important;
+    font-family: 'Pacifico', cursive;
+}
+.lnk {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.lnk:hover{
+    text-decoration: underline !important;
+}
